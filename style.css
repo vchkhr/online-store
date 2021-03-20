@@ -1,0 +1,411 @@
+body {
+    margin: 0px;
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+}
+
+input[type='range'] {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex input {
+    width: 100%;
+}
+
+a.invisible-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+header, footer {
+    text-align: center;
+    background-color: rgb(252, 252, 243);
+    padding: 10px;
+}
+
+header h1.store-name, footer h1.store-name {
+    letter-spacing: 3px;
+    margin: 0px 20px 0px 20px;
+    font-size: 30px;
+    line-height: 40px;
+    color: rgb(216, 120, 3)
+}
+
+header h1.store-name span.store-slogan, footer h1.store-name span.store-slogan {
+    color: darkgrey;
+    letter-spacing: 0px;
+    font-weight: 400;
+}
+
+header p.nav-item, footer p.nav-item {
+    margin: 0px 20px 0px 20px;
+    font-size: 20px;
+    line-height: 25px;
+    color: rgb(43, 43, 43);
+}
+
+header p.nav-item.phone, footer p.nav-item.phone {
+    font-size: 12.5px;
+    line-height: 14px;
+}
+
+header p.nav-item.phone a.phone-number, footer p.nav-item.phone a.phone-number {
+    text-decoration: none;
+}
+
+header p.nav-item a, footer p.nav-item a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header p.nav-item a:hover, footer p.nav-item a:hover {
+    text-decoration: none;
+}
+
+header input.nav-item.search, footer input.nav-item.search {
+    margin: 0px 20px 0px 20px;
+    font-size: 16px;
+    padding: 8px;
+    border: 0px;
+    border-bottom: 1px solid darkorange;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+header input.nav-item.search::placeholder, footer input.nav-item.search::placeholder {
+    font-family: "PT Sans", sans-serif;
+}
+
+main {
+    margin: 0px 20px 20px 20px;
+}
+
+main div.breadcrumbs p span.breadcrumb {
+    background-color: rgb(250, 250, 189);
+    padding: 3px;
+    border: 1px solid rgb(255, 255, 0);
+    border-radius: 10px;
+}
+
+main div.breadcrumbs p span.breadcrumb a {
+    color: inherit;
+    text-decoration: none;
+}
+
+main div.breadcrumbs p span.breadcrumb:hover {
+    background-color: darkorange;
+    border: 1px solid darkorange;
+    color: white;
+}
+
+main h1.page-title {
+    text-align: center;
+}
+
+main form.active-filters {
+    text-align: center;
+}
+
+main form.active-filters label {
+    padding: 6px 16px;
+    color: black;
+    border: 1px solid darkorange;
+    border-radius: 50px;
+    margin: 10px 10px 0px 10px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+main form.active-filters input[type='checkbox'] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+main form.active-filters input[type='checkbox']:checked + label {
+    background-color: darkorange;
+    color: white;
+}
+
+main form.active-filters input[type='checkbox']:checked + label:before {
+    content: "\2713  ";
+}
+
+div.filters-and-products {
+    display: flex;
+}
+
+main form.filters {
+    width: 100%;
+    max-width: 300px;
+    margin-right: 10px;
+}
+
+main form.filters fieldset {
+    border: 1px solid darkorange;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+main form.filters p.range-min-max {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+main div.products {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 12px;
+    width: 100%;
+}
+
+main div.products div.product {
+    max-width: 200px;
+    border: 1px solid darkorange;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 10px 0px 10px;
+    position: relative;
+}
+
+main div.products div.product img.product-image {
+    width: 100%;
+}
+
+main div.products div.product h1.product-name {
+    font-size: 20px;
+    margin-bottom: 110px;
+    text-align: center;
+}
+
+main div.products div.product div.info {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: calc(100% - 2 * 10px);
+    padding: 0px 10px;
+}
+
+main div.products div.product div.info p.price,
+main div.product-page div.product-info div.info p.price {
+    font-family: "PT Mono", monospace;
+    float: left;
+}
+
+main div.products div.product div.info p.price span.price,
+main div.product-page div.product-info div.info p.price span.price {
+    font-size: 22px;
+}
+
+main div.products div.product div.info p.stock,
+main div.product-page div.product-info div.info p.stock {
+    float: right;
+}
+
+main div.products div.product div.info p.stock.available,
+main div.product-page div.product-info div.info p.stock.available {
+    color: green;
+}
+
+main div.products div.product div.info p.stock.available:before,
+main div.product-page div.product-info div.info p.stock.available:before {
+    content: "\2713 ";
+}
+
+main div.products div.product div.info p.stock.unavailable,
+main div.product-page div.product-info div.info p.stock.unavailable {
+    color: red;
+}
+
+main div.products div.product div.info p.stock.unavailable:before,
+main div.product-page div.product-info div.info p.stock.unavailable:before {
+    content: "\2717  ";
+}
+
+main div.products div.product div.info p.buy a,
+main div.product-page div.product-info div.info p.buy a {
+    background-color: darkorange;
+    color: white;
+    font-weight: 900;
+    text-decoration: none;
+    display: inline-block;
+    width: calc(100% - 2 * 10px);
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+main div.products div.product div.info p.stock.unavailable ~ p.buy a,
+main div.product-page div.product-info div.info p.stock.unavailable ~ p.buy a {
+    background-color: darkgray;
+}
+
+@media only screen and (max-width: 1350px) {
+    header nav h1.store-name span.store-slogan,
+    header nav input.search,
+    header nav p.phone,
+    footer nav h1.store-name span.store-slogan,
+    footer nav input.search,
+    footer nav p.phone {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    main div.filters-and-products form.filters {
+        max-width: 200px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header nav h1.store-name span.store-slogan,
+    header nav input.search,
+    header nav p.nav-item,
+    footer nav h1.store-name span.store-slogan,
+    footer nav input.search,
+    footer nav p.nav-item {
+        display: none;
+    }
+
+    main form.active-filters label {
+        display: block;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    main div.filters-and-products {
+        display: inline-block;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    main div.filters-and-products form.filters {
+        width: 100%;
+        max-width: unset;
+    }
+
+    main div.filters-and-products div.products {
+        display: inline-block;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    main div.filters-and-products div.products div.product {
+        max-width: unset;
+    }
+}
+
+main div.product-page {
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main div.product-page div.product-info {
+    display: flex;
+}
+
+main div.product-page div.product-info img.product-image {
+    width: 100%;
+    max-width: 500px;
+}
+
+main div.product-page div.product-info h3 {
+    margin-top: 50px;
+}
+
+main div.product-page div.product-info table.description td {
+    padding-right: 50px;
+}
+
+main div.product-page div.reviews {
+    margin-top: 50px;
+}
+
+main div.product-page div.reviews div.review {
+    display: flex;
+    align-items: center;
+    border: 1px solid darkorange;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+
+main div.product-page div.reviews div.review p {
+    margin: 5px;
+}
+
+main div.product-page div.reviews div.review div.profile-photo img {
+    width: 50px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+main div.product-page div.reviews div.review p.info {
+    font-style: italic;
+    color: rgb(107, 107, 107);
+}
+
+@media only screen and (max-width: 1024px) {
+    main div.product-page div.product-info {
+        display: inline-block;
+        width: 100%;
+    }
+
+    main div.product-page div.product-info img.product-image {
+        max-width: none;
+    }
+
+    main div.product-page div.product-info table.description {
+        width: 100%;
+    }
+
+    main div.product-page div.product-info table.description tr td:nth-child(2) {
+        padding-right: 0px;
+    }
+}
+
+main div.pagination {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+main div.pagination p.page {
+    border: 1px solid darkorange;
+    border-radius: 10px;
+    color: darkorange;
+    padding: 10px 20px;
+    margin: 5px 5px;
+}
+
+main div.pagination p.page.current {
+    background-color: darkorange;
+    color: white;
+}
+
+main div.pagination a {
+    color: inherit;
+    text-decoration: none;
+}
+
+footer {
+    margin: 100px 0px 0px 0px;
+}
+
+footer p.copy {
+    font-size: 11px;
+}

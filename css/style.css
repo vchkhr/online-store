@@ -1,0 +1,219 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(96, 116, 207);
+    display: flex;
+    min-height: calc(100vh - 20px);
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#dec {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 400px;
+    background: linear-gradient(55deg, rgb(100, 173, 215), rgb(91, 99, 209));
+    border-radius: 0 0 15px 15px;
+}
+
+input {
+    width: 80px;
+    height: 80px;
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 25px;
+}
+
+#out {
+    width: 400px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 15px 15px 0 0;
+    padding: 5px 32px;
+    box-sizing: border-box;
+}
+
+input:hover {
+    background-color: rgba(0, 0, 0, 0.123);
+}
+
+#expression {
+    font-size: 30px;
+    width: 100%;
+    height: 50%;
+    color: black;
+    text-align: end;
+    word-spacing: normal;
+}
+
+#history {
+    text-align: end;
+    font-size: 18px;
+    color: rgb(122, 122, 122);
+    height: 38%;
+    width: 100%;
+    padding: 0px;
+}
+
+.nhover:hover {
+    background: none;
+}
+
+#conv {
+    top: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+#conv div:hover {
+    background: linear-gradient(55deg, rgb(100, 173, 215), rgb(91, 99, 209));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#enter-0 {
+    border-radius: 0 0 0 15px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 160px;
+}
+
+#enter-equal {
+    border-radius: 0 0 15px 0;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    width: 160px;
+}
+
+#hex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 400px;
+    background: linear-gradient(55deg, rgb(100, 173, 215), rgb(91, 99, 209));
+    border-radius: 0 0 15px 15px;
+}
+
+#bin {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: ". . . . .";
+    background: linear-gradient(55deg, rgb(100, 173, 215), rgb(91, 99, 209));
+    border-radius: 0 0 15px 15px;
+}
+
+#enter-equal-bin {
+    border-radius: 0 0 15px 15px;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    width: 400px;
+}
+
+#enter-0-bin {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 200px;
+}
+
+#enter-1-bin {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    width: 200px;
+}
+
+#o-t {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    width: 400px;
+}
+
+#op {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    width: 400px;
+}
+
+#op input {
+    width: 100px;
+}
+
+.length {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 400px;
+    background: linear-gradient(55deg, rgb(100, 173, 215), rgb(91, 99, 209));
+    border-radius: 0 0 15px 15px;
+}
+
+#lol {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 01fr;
+    gap: 0px 0px;
+    grid-template-areas: ". . . . ." ". . . . .";
+}
+
+#lol #enter-clear {
+    grid-row: 1 / 3;
+    grid-column: 5;
+    height: inherit;
+}
+
+#grid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    width: 400px;
+}
+
+#grid3 input {
+    width: 133px;
+}
+
+#c2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-start: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#c2 input {
+    height: 160px;
+}
+
+#opc {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    width: 400px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+input.active {
+    background: rgba(0, 0, 0, 0.575);
+}
+
+div.active {
+    background: linear-gradient(55deg, rgb(0, 26, 255), rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}

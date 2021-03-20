@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Catalog – SmartHome</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <nav class="flex">
+            <h1 class="store-name nav-item"><a href="index.html" class="invisible-link">💡SmartHome<span class="store-slogan"> – Smart Devices</span></a></h1>
+
+            <p class="nav-item"><a href="#">❓About</a></p>
+
+            <p class="nav-item"><a href="#">🔧Service</a></p>
+
+            <p class="nav-item"><a href="#">💛Contact</a></p>
+
+            <input type="text" class="nav-item search" placeholder="🔍Search">
+
+            <p class="nav-item phone">☎️Phone Support:<br><a href="tel:+380991234555" class="phone-number">+380 99 123 45 55</a></p>
+        </nav>
+    </header>
+
+    <main>
+        <div class="breadcrumbs">
+            <p>You are here: 
+                <span class="breadcrumb"><a href="index.html">Catalog</a></span>
+            </p>
+        </div>
+
+        <h1 class="page-title">📕 Catalog</h1>
+
+        <form class="active-filters">
+            <input type="checkbox" id="brand-xiaomi" checked="checked">
+            <label for="brand-xiaomi" name="filter">Brand: Xiaomi</label>
+
+            <input type="checkbox" id="brand-ajax" checked="checked">
+            <label for="brand-ajax" name="filter">Brand: AJAX</label>
+
+            <input type="checkbox" id="brand-siterwell" checked="checked">
+            <label for="brand-siterwell" name="filter">Brand: Siterwell</label>
+
+            <input type="checkbox" id="max-price" checked="checked">
+            <label for="max-price" name="filter">Max Price: 1199 ₴</label>
+        </form>
+
+        <div class="filters-and-products">
+            <form class="filters">
+                <fieldset class="brand">
+                    <legend>⚙️Brand</legend>
+    
+                    <input type="checkbox" id="xiaomi" checked="checked">
+                    <label for="xiaomi" name="brand">Xiaomi</label>
+                    <br>
+    
+                    <input type="checkbox" id="ajax" checked="checked">
+                    <label for="ajax" name="brand">Ajax</label>
+                    <br>
+    
+                    <input type="checkbox" id="siterwell" checked="checked">
+                    <label for="siterwell" name="brand">Siterwell</label>
+                </fieldset>
+    
+                <fieldset class="max-price">
+                    <legend>💸Maximum Price</legend>
+    
+                    <input type="range" id="max-price" min="399" max="1199" step="100" value="1199">
+
+                    <p class="range-min-max">
+                        <span class="min">399 ₴</span>
+                        <span class="max">1199 ₴</span>
+                    </p>
+                </fieldset>
+    
+                <fieldset class="available">
+                    <legend>🛒Available</legend>
+    
+                    <input type="checkbox" id="yes">
+                    <label for="yes" name="available">In Stock</label>
+                </fieldset>
+            </form>
+    
+            <div class="products">
+                <div class="product">
+                    <a href="card.html" class="invisible-link">
+                        <img class="product-image" src="assets/images/mijia-move-detector-ytc4016cn.jpg" alt="Mijia Move Detector">
+                        <h1 class="product-name">Mijia Move Detector</h1>
+                    </a>
+                    <div class="info">
+                        <p class="price"><span class="price">499</span> ₴</p>
+                        <p class="stock available">Available</p>
+                        <p class="buy"><a href="card.html">Buy</a></p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <a href="#" class="invisible-link">
+                        <img class="product-image" src="assets/images/xiaomi-mi-light-detection-sensor.jpg" alt="Xiaomi Mi Light Detection Sensor">
+                        <h1 class="product-name">Xiaomi Mi Light Detection Sensor</h1>
+                    </a>
+                    <div class="info">
+                        <p class="price"><span class="price">399</span> ₴</p>
+                        <p class="stock unavailable">Unavailable</p>
+                        <p class="buy"><a href="#">Buy</a></p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <a href="#" class="invisible-link">
+                        <img class="product-image" src="assets/images/ajax-relay.jpg" alt="Ajax Relay With Dry Contact">
+                        <h1 class="product-name">Ajax Relay With Dry Contact</h1>
+                    </a>
+                    <div class="info">
+                        <p class="price"><span class="price">849</span> ₴</p>
+                        <p class="stock unavailable">Unavailable</p>
+                        <p class="buy"><a href="#">Buy</a></p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <a href="#" class="invisible-link">
+                        <img class="product-image" src="assets/images/ajax-socket.jpg" alt="Ajax Socket">
+                        <h1 class="product-name">Ajax Socket</h1>
+                    </a>
+                    <div class="info">
+                        <p class="price"><span class="price">1199</span> ₴</p>
+                        <p class="stock available">Available</p>
+                        <p class="buy"><a href="#">Buy</a></p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <a href="#" class="invisible-link">
+                        <img class="product-image" src="assets/images/siterwell-radiator-valve-with-thermostat.jpg" alt="Siterwell Radiator Valve with Thermostat">
+                        <h1 class="product-name">Siterwell Radiator Valve with Thermostat</h1>
+                    </a>
+                    <div class="info">
+                        <p class="price"><span class="price">999</span> ₴</p>
+                        <p class="stock available">Available</p>
+                        <p class="buy"><a href="#">Buy</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="pagination">
+            <a href="#"><p class="page current">1</p></a>
+            <a href="#"><p class="page">2</p></a>
+            <a href="#"><p class="page">3</p></a>
+            <a href="#"><p class="page">4</p></a>
+            <a href="#"><p class="page">5</p></a>
+            <a href="#"><p class="page">6</p></a>
+            <a href="#"><p class="page">7</p></a>
+            <a href="#"><p class="page">8</p></a>
+            <a href="#"><p class="page">9</p></a>
+        </div>
+    </main>
+
+    <footer>
+        <nav class="flex">
+            <h1 class="store-name nav-item"><a href="index.html" class="invisible-link">💡SmartHome<span class="store-slogan"> – Smart Devices</span></a></h1>
+
+            <p class="nav-item"><a href="#">❓About</a></p>
+
+            <p class="nav-item"><a href="#">🔧Service</a></p>
+
+            <p class="nav-item"><a href="#">💛Contact</a></p>
+
+            <p class="nav-item phone">☎️Phone Support:<br><a href="tel:+380991234555" class="phone-number">+380 99 123 45 55</a></p>
+        </nav>
+
+        <p class="copy">&copy; <a href="https://vchkhr.com" class="invisible-link">SmartHome</a>, 2021. All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
